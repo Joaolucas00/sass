@@ -61,10 +61,9 @@ a, a:visited, a:active {
 }
 .grid__sidebar {
   background-color: rgb(255, 204, 255);
-  text-align: center;
 }
-@media (min-width: 42.75em) {
+@media (max-width: 56.24875em) {
   .grid__sidebar {
-    text-align: left;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

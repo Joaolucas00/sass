@@ -9,7 +9,7 @@
     width: min(100% - 40px, 1100px); // seleciona o menor valor comparado a viewport
     margin-inline: auto;
 
-    @include u.breakpoint(large) {
+    @include u.breakpoint-up(large) {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
     }
@@ -30,9 +30,8 @@
 
     &__sidebar {
         background-color: rgb(255, 204, 255);
-        text-align: center;
-        @include u.breakpoint(medium) {
-            text-align: left;
+        @include u.breakpoint-down('medium-down') {
+            text-align: center;
         }
     }
 }
