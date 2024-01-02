@@ -26,12 +26,33 @@
 
     &__main {
         background-color: rgb(169, 169, 255);
+
+        // ordem media query
+        /*
+         *   a ordem importa, se medium estiver por último, a segunda media vai sobrepor
+        **   a primeira, já q a última foi executada primeiramente.
+        */
+
+        @include u.breakpoint-up(medium) {
+            background-color: rgb(247, 234, 122);
+        }
+
+        @include u.breakpoint-up(large) {
+            background-color: rgb(180, 74, 74);
+        }
+
     }
 
     &__sidebar {
         background-color: rgb(255, 204, 255);
+
+        // ordem importa
         @include u.breakpoint-down('medium-down') {
             text-align: center;
+        }
+
+        @include u.breakpoint-down(small) {
+            text-align: right;
         }
     }
 }

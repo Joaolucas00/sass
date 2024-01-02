@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -58,6 +59,20 @@ a, a:visited, a:active {
 }
 .grid__main {
   background-color: rgb(169, 169, 255);
+  /*
+   *   a ordem importa, se medium estiver por último, a segunda media vai sobrepor
+  **   a primeira, já q a última foi executada primeiramente.
+  */
+}
+@media (min-width: 42.75em) {
+  .grid__main {
+    background-color: rgb(247, 234, 122);
+  }
+}
+@media (min-width: 56.25em) {
+  .grid__main {
+    background-color: rgb(180, 74, 74);
+  }
 }
 .grid__sidebar {
   background-color: rgb(255, 204, 255);
@@ -65,5 +80,10 @@ a, a:visited, a:active {
 @media (max-width: 56.24875em) {
   .grid__sidebar {
     text-align: center;
+  }
+}
+@media (max-width: 43.7485em) {
+  .grid__sidebar {
+    text-align: right;
   }
 }/*# sourceMappingURL=main.css.map */
