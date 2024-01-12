@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.375rem, 0.875rem + 2vw, 2.25rem);
+  font-size: clamp(1.375rem, 0.875rem + 1.5vw, 2.25rem);
 }
 
 p {
@@ -49,8 +49,8 @@ a, a:visited, a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  gap: 40px;
-  width: min(100% - 40px, 1100px);
+  gap: 1.875rem;
+  width: min(100% - 2.5rem, 68.75rem);
   margin-inline: auto;
   /*@media (min-width: 900px) {
       grid-template-columns: 2fr 1fr;
@@ -64,7 +64,7 @@ a, a:visited, a:active {
   }
 }
 .grid__main, .grid__sidebar {
-  padding: 40px;
+  padding: 2.5rem;
 }
 .grid__main {
   background-color: rgb(169, 169, 255);
@@ -73,7 +73,7 @@ a, a:visited, a:active {
   **   a primeira, já q a última foi executada primeiramente.
   */
 }
-@media (min-width: 42.75em) {
+@media (min-width: 43.75em) {
   .grid__main {
     background-color: rgb(247, 234, 122);
   }

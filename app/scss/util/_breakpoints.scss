@@ -1,6 +1,8 @@
+@use 'functions' as f;
+
 // 700px, 900px, 1440px
 $breakpoints-up: (
-    'medium': 42.75em,
+    'medium': f.toEm(700), //42.75em,
     'large': 56.25em,
     'xlarge': 90em
     );

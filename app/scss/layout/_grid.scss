@@ -4,9 +4,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    gap: 40px;
+    gap: u.toRem(30);
     //max-width: 1300px;
-    width: min(100% - 40px, 1100px); // seleciona o menor valor comparado a viewport
+    width: min(100% - u.toRem(40), u.toRem(1100));//min(100% - 40px, 1100px); // seleciona o menor valor comparado a viewport
     margin-inline: auto;
 
     @include u.breakpoint-up(large) {
@@ -21,7 +21,7 @@
     } */
 
     &__main, &__sidebar {
-        padding: 40px;
+        padding: u.toRem(40);
     }
 
     &__main {
