@@ -95,4 +95,11 @@ a, a:visited, a:active {
   .grid__sidebar {
     text-align: right;
   }
+}
+.grid__widget {
+  background-color: azure;
+  padding: 1rem;
+}
+.grid__widget.green {
+  background-color: green;
 }/*# sourceMappingURL=main.css.map */
